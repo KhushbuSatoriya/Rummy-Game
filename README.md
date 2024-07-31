@@ -16,5 +16,7 @@ Integrated Chat Functionality: Enhance user engagement with built-in chat, allow
 Technologies Used
 
 Socket.io: For real-time, bidirectional communication between the server and clients.
+
 Node.js: To handle backend logic and game state management.
+
 HTML, CSS, JavaScript: For creating a responsive and interactive frontend
