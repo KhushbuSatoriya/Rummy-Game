@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rummy</title>
+    <style>
+      #room_content {
+        display: none;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="join_room">
+      <form action="" id="loginForm">
+        <label for="email">Email: </label>
+        <input type="text" name="email" id="email" required />
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password" required />
+        <button type="submit">Login</button>
+      </form>
+      <button id="btn">Join Room</button>
+    </div>
+    <div id="room_content">
+      <button id="exit_btn">EXIT</button>
+      <input type="text" name="msg" id="msg" placeholder="Type your message" />
+      <button id="btn2">Send</button>
+      <hr />
+      <hr />
+      <div id="mainGameContainer"></div>
+      <hr />
+      <br />
+      <div id="meldDeckContainer"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.4/socket.io.js"></script>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
